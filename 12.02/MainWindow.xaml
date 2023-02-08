@@ -1,0 +1,43 @@
+﻿<Window x:Class="zadanko1201.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:zadanko1201"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800"
+        x:Name="main"
+        FontSize="14"
+        >
+    <StackPanel>
+        <Menu x:Name="Taby">
+            <MenuItem Header="Plik">
+                <MenuItem Header="Nowy" Click="Nowy"></MenuItem>
+                <MenuItem Header="Zapisz" Click="Zapisz"></MenuItem>
+                <MenuItem Header="Oblicz" Click="Oblicz"></MenuItem>  
+            </MenuItem>
+            <MenuItem Header="Widok">
+                    <MenuItem Header="Kolor">
+                        <MenuItem Header="Zielony" Click="Zielony"></MenuItem>
+                        <MenuItem Header="Niebieski" Click="Niebieski"></MenuItem>
+                    </MenuItem>
+                    <MenuItem Header="Czcionka">
+                        <MenuItem Header="Mala" Click="Mala"></MenuItem>
+                        <MenuItem Header="Duza" Click="Duza"></MenuItem>
+                    </MenuItem>
+            </MenuItem>
+            <MenuItem Header="Pomoc">
+                <MenuItem Header="O autorze" Click="info"></MenuItem>
+                <MenuItem Header="Instrukcja" Click="Instrukcja"></MenuItem>
+            </MenuItem>
+        </Menu>
+      
+        <TextBlock x:Name="a">Podaj A</TextBlock>
+        <TextBox x:Name="number1"></TextBox>
+        <TextBlock x:Name="b">Podaj B</TextBlock>
+        <TextBox x:Name="number2"></TextBox>
+        <Button Click="NWD" x:Name="NWDD">Policz NWD</Button>
+        <Button Click="NWW" x:Name="NWWW">Policz NWW</Button>
+        <TextBlock x:Name="Wynik">Tutaj będzie wynik</TextBlock>
+    </StackPanel>
+</Window>
